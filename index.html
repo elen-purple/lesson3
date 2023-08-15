@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- форми -->
+    <section>
+      <h1>Форма</h1>
+      <form name="form">
+        <div role="group" aria-labelledby="name">
+          <p id="name">Ведіть дані</p>
+          <label>
+            Ім'я
+            <br />
+            <input type="text" name="user-name" placeholder="Alex" autofocus />
+          </label>
+          <br />
+          <label>
+            Призвіще
+            <br />
+            <input type="text" name="user-surname" placeholder="Jackson" />
+          </label>
+          <br />
+          <label>
+            Nickname
+            <br />
+            <input type="text" name="user-nickname" placeholder="Garret" />
+          </label>
+          <br />
+          <label>
+            Email
+            <br />
+            <input
+              type="email"
+              name="user-email"
+              placeholder="alex@gmail.com"
+            />
+          </label>
+          <br />
+          <label>
+            Tel
+            <br />
+            <input type="tel" name="user-tel" placeholder="+380993943756" />
+          </label>
+          <br />
+          <label>
+            password
+            <br />
+            <input
+              type="password"
+              name="user-password"
+              placeholder="123454321la-la-la"
+            />
+          </label>
+          <br />
+          <label>
+            Кометар
+            <br />
+            <textarea
+              name="user-coment"
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Мені сподобалося..."
+            ></textarea>
+          </label>
+          <br />
+        </div>
+        <div role="group" aria-labelledby="age">
+          <p id="age">Вік</p>
+          <label>
+            <input type="radio" name="age" value="5-18" checked />
+            Від 5 до 18
+          </label>
+          <label>
+            <input type="radio" name="age" value="19-50" />
+            Від 19 до 50
+          </label>
+          <label>
+            <input type="radio" name="age" value="50-90" />
+            Від 50 до 90
+          </label>
+        </div>
+        <div role="group" aria-labelledby="language">
+          <p id="language">Мова</p>
+          <label>
+            <input type="checkbox" name="language" value="en" checked />
+            english
+          </label>
+          <label>
+            <input type="checkbox" name="language" value="uk" checked />
+            ukrainian
+          </label>
+          <label>
+            <input type="checkbox" name="language" value="fr" />
+            french
+          </label>
+        </div>
+        <div role="group" aria-labelledby="time">
+          <p id="time">Час</p>
+          <label>
+            <input type="time" />
+            time
+          </label>
+          <label>
+            <input type="date" />
+            date
+          </label>
+          <label>
+            <input type="datetime-local" />
+            date and time
+          </label>
+        </div>
+        <div role="group" aria-labelledby="month">
+          <p id="month">Місяць</p>
+          <label>
+            <select name="monthes">
+                <option value="january">january</option>
+                <option value="february">february</option>
+                <option value="march">march</option>
+                <option value="april">april</option>
+                <option value="may">may</option>
+                <option value="juin">juin</option>
+                <option value="july">july</option>
+                <option value="august">august</option>
+                <option value="september">september</option>
+                <option value="october">october</option>
+                <option value="november">november</option>
+                <option value="december">december</option>
+            </select>
+          </label>
+        </div>
+        <div role="group" aria-labelledby="contry">
+          <p id="contry">Країна</p>
+          <label>
+            Країна
+            <br>
+            <input type="text" name="contry" placeholder="ukraine" list="contries"/>
+            <datalist id="contries">
+                <option value="ukrain">ukrain</option>
+                <option value="us">united states</option>
+                <option value="uk">united kingdom</option>
+                <option value="france">france</option>
+                <option value="sp">spain</option>
+            </datalist>
+          </label>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </body>
+</html>
